@@ -2,7 +2,6 @@ var nombrealeatoire = Math.floor(Math.random()*20);
 var trouve=false;
 
 alert(nombrealeatoire);
-
 var nombre = parseInt(prompt('entrez un nombre'));
 
 
