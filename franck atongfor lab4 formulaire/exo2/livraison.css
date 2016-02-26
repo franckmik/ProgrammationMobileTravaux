@@ -1,0 +1,31 @@
+@font-face{font-family: police1;
+src:url(OpenSans-Semibold.ttf);}
+
+div{margin-top:40px;
+	margin-bottom:40px;
+	margin-left:25px;}
+
+.bouton{
+		text-align:center;
+		height:5px;
+		margin-top:15px;
+		}
+
+form{font-family:police1;
+		font-size:25px;
+		margin:50px;
+		
+	}
+		
+header{font-size:40px;
+		color:white;
+		background-color:black;
+		text-align:center;
+		margin:50px;
+		border:solid;
+	}
+	
+input,select{
+			height:20px;
+			width:210px;
+		}

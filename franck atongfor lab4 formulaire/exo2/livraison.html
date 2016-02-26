@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+        <title>Livraison</title>
+        <meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href= "livraison.css"/>
+</head>
+
+<body>
+
+<header>Passez votre commande</header>
+
+<form method="post" action="faire.php" onsubmit="return verifier(this);">
+
+<fieldset>
+
+<legend>Informations client</legend>
+
+<div class="nomproduit"><label>Nom produit:<select name="produit" onchange="nomProduit(this)"> 
+<option value="samsung5">samsung5</option> 
+<option value="samsung6">samsung6</option> 
+</select>
+</label>
+</div>
+
+<div class="quantitecommande"><label>Quantité commandée:<input id="quantitecommande" name="quantitecommande" type="text" onblur="verifQuantite(this);"></label></div>
+
+<div class="nomclient"><label>Nom du client:<input id="nomclient" name="nomclient" type="text" onblur="verifNomClient(this);"></label></div>
+
+<div class="email"><label>E-mail:<input type="email" name="adressemail" onblur="verifMail(this)"></label></div>
+
+
+<div class="adresselivraison"><label>Adresse de livraison:<input id="adresselivraison" name="adresselivraison" type="text" onblur="verifAdresse(this);" placeholder="253, rue saint-dominique"></label></div>
+
+
+
+</fieldset>
+
+<div class="bouton"><input type="submit" value="Valider"></div>
+
+<fieldset>
+
+<legend>Calcul prix</legend>
+
+<div class="soustotal"><label>Sous total a payer:<input id="soustotal" name="soustotal" type="text"></label></div>
+
+<div class="montanttaxe"><label>Montant taxes:<input id="taxes" name="taxes" type="text"></label></div>
+
+<div class="total"><label>Montant total:<input id="total" name="total" type="text"></label></div>
+
+
+</fieldset>
+
+</form>
+
+</body>
+
+
+<script src="livraison.js">
+
+</script>		
+
+</html>

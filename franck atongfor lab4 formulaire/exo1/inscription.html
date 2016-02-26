@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+        <title>Inscription</title>
+        <meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href= "inscription.css"/>
+</head>
+
+<body>
+<header>Inscrivez-vous</header>
+<form onsubmit="return verifier(this);">
+<fieldset>
+
+<legend>Informations utilisateur</legend>
+
+<div class="nomutilisateur"><label>Nom utilisateur:<input type="text" name="nomutilisateur" onblur="verifPseudo(this);"></label></div>
+
+<div class="motpasse"><label>Mot de passe:<input type="password" name="motdepasse" onblur="verifMotPasse(this);"></label><div>
+
+<p> Un mot de passe d'au moins 8 caracteres qui contient au moins un caractère numérique,  un caractère spécial, un caractere alphabetique minuscule et majuscule</p>
+
+<div class="nom"><label>Nom:<input id="nomuser" name="nom" type="text" onblur="verifNomPrenom(this);"></label></div>
+
+<div class="prenom"><label>Prenom:<input id="prenomuser" name="prenom" type="text" onblur="verifNomPrenom(this);"></label></div>
+
+<div class="email"><label>E-mail:<input type="email" name="adressemail" onblur="verifMail(this)"></label></div>
+
+<div class="bouton"><input type="submit" value="Valider"></div>
+
+
+</fieldset>
+</form>
+
+<form method="post" onsubmit="return verifier2(this);">
+<fieldset>
+
+<legend>Connexion</legend>
+
+<div class="nomutilisateur2"><label>Nom utilisateur:<input type="text" name="nomutilisateur2" onblur="verifPseudo(this);"></label></div>
+
+<div class="motpasse2"><label>Mot de passe:<input type="password" name="motdepasse2" onblur="verifMotPasse(this);"></label><div>
+
+<div class="bouton2"><input type="submit" value="Valider"></div>
+
+</fieldset>
+
+
+
+</form>
+
+</body>
+
+<script src="inscription.js">
+
+</script>		
+
+</html>
